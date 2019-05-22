@@ -26,12 +26,13 @@ public class LoginPage {
 
 
     public void login(String usr, String pass) {
+
         username.sendKeys(usr);
         password.sendKeys(pass);
         loginButton.click();
     }
 
-    public void open() {
+    public  void open() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 
     }

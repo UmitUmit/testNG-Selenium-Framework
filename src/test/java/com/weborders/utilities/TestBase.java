@@ -27,7 +27,7 @@ public abstract class TestBase {
         pages = new Pages();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get(ConfigurationReader.getProperty("employees.app.url"));
+        driver.get(ConfigurationReader.getProperty("url"));
     }
 
     @AfterMethod (alwaysRun = true)
@@ -45,6 +45,16 @@ public abstract class TestBase {
         }
         //Driver.closeDriver();
     }
+
+
+//
+//    TODO || EXTENT REPORTS  is reporting tool that generates HTML reports with detailed steps, metrics, ans screenshots
+//    TODO||  ExtentReports --> we use it to set the path where the report will be generated
+//    TODO||  ExtentHtmlReporter --> we use to customize the html of the report
+//    TODO||  ExtentTest --> used to generate logs in the report
+
+
+
 
     @BeforeTest (alwaysRun = true)
     public void setUpTest() {
@@ -66,6 +76,7 @@ public abstract class TestBase {
         report.setSystemInfo("Environment", "Staging");
         report.setSystemInfo("Browser", ConfigurationReader.getProperty("browser"));
         report.setSystemInfo("OS", System.getProperty("os.name"));
+        report.setSystemInfo("QA Engineer", "Umid");
 
         report.setSystemInfo("QA Engineer", "Admiral Kunkka");
 

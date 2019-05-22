@@ -5,6 +5,7 @@ import com.weborders.utilities.TestBase;
 import org.testng.annotations.Test;
 
 import static com.weborders.utilities.ApplicationConstants.LOGIN_ERROR_MESSAGE;
+import static org.testng.Assert.assertEquals;
 
 public class ErrorMessageValidationTest extends TestBase {
 

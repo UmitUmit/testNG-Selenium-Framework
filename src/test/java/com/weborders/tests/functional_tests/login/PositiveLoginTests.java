@@ -5,6 +5,7 @@ import com.weborders.utilities.ConfigurationReader;
 import com.weborders.utilities.TestBase;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.fail;
 
 public class PositiveLoginTests extends TestBase {

@@ -5,7 +5,11 @@ import com.weborders.utilities.ConfigurationReader;
 import com.weborders.utilities.TestBase;
 import org.testng.annotations.Test;
 
+import static org.testng.AssertJUnit.assertEquals;
+
 public class PageHeadersTests extends TestBase {
+
+
 
     @Test
     public void pageHeadersTest(){
